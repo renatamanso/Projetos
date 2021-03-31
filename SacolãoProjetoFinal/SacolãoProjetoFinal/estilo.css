@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&family=Sintony:wght@400;700&display=swap');
+*{margin: 0; padding: 0;}
+
+body{
+	background: rgb(255,255,255);
+}
+
+.container{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 0.1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+  grid-template-areas: 
+  "nav nav nav nav"
+  "sidenav main main main"
+  "sidenav content1 content1 content1"
+  "sidenav content2 content2 content2"
+  "sidenav content3 content3 content3"
+  "footer footer footer footer";
+  grid-gap: 0.2rem;
+}
+
+nav
+{
+  background-color: #358d36;
+  grid-area: nav;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  margin-left: 202px;
+  padding-left: 20px;
+}
+
+main
+{
+  grid-area: main;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  margin-left: 150px;
+  padding-left: 20px;
+}
+
+#sidenav
+{
+  background-color: #358d36;
+  grid-area: sidenav;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+} 
+  
+  
+#sidenav a 
+{
+  font: 1rem Sintony, Corbel, sans-serif;
+  color: white;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  grid-area: sidenav;
+}
+  
+#sidenav a:hover 
+{
+  background-color: #ddd;
+  color: black;
+  grid-area: sidenav;
+}
+
+#content1
+{
+  grid-area: content1;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  margin-left: 136px;
+  padding-left: 20px;
+}
+
+#content2
+{
+  grid-area: content2;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  margin-left: 136px;
+  padding-left: 20px;
+}
+
+#content3
+{
+  grid-area: content3;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  margin-left: 100px;
+  padding-left: 20px;
+}
+
+#logo{
+    width:190px;
+	height:25%;
+	border-radius: 100%;
+}
+
+#pag-sobre p{
+	font: 1.3rem 'Roboto', Corbel, sans-serif;
+	width: 100%;
+	text-align: center;
+}
+
+h1{
+	font: 2rem 'Sintony', Corbel, sans-serif;
+ 	color: #358d36;
+ 	text-align: center;
+ 	margin-top: 20px;
+}
+
+#quem{
+	width:20%;
+	height:20%;
+	border-radius: 80%;
+	align-items: center;
+}
+
+.icones{
+	border-radius:40%;
+	margin-left: 225px;
+}
+
+.img-icones{
+	width: 100px;
+	height: 100px;
+	background-color: #FFF;
+	padding: 2px;
+}
+
+#banner-promo{
+	float: right;
+	margin-top: 20px;
+	width:22%;
+	height:95%;
+	margin-left:15px;
+	align-items: left;
+}
+
+section{
+	padding: 20px;
+}
+
+#produtos
+{
+	display: flex;
+}
+
+#pag-produtos
+{
+    background-color: #b48758;		
+}
+
+h3{
+	font: 1.2rem Sintony, sans-serif;
+	color: #358d36;
+	text-align: left;
+	margin-right: 9.7rem;
+}
+
+#pag-produtos p
+{
+	font: 1.1rem Roboto, sans-serif;
+	color: #6d6d6d;
+}
+
+#pag-produtos h4
+{
+	font: 1.2rem 'Sintony', sans-serif;
+	color: #FFF;
+}
+
+#container
+{
+	display: flex;
+	margin-top: 10px;
+}
+
+.card1
+{
+	background-color: #FFF;
+	margin: 8px;
+	border-radius: 8px;
+	box-shadow: 0px 4px 8px #696969;
+	transition: 0.1;
+	margin-left: 35px;
+}
+
+.card2
+{
+	background-color: #FFF;
+	margin: 8px;
+	border-radius: 8px;
+	box-shadow: 0px 4px 8px #696969;
+	transition: 0.1;
+	margin-left: 20px;
+}
+
+.card:hover{
+	box-shadow: 0px 8px 16px #696969;
+}
+
+.imgPro{
+	margin-left: 70px;
+}
+
+img
+{
+ 	width: 190px;
+	height: 190px;
+}
+
+.card-content
+{
+	padding: 20px;
+}
+
+.card-content
+{
+	font: 3rem Roboto, Lato, Avenir, sans-serif;
+	color: #6d6d6d;
+	line-height: 400px;
+}
+
+#pag-encomendas{
+
+}
+
+h2{
+	font: 2rem 'Sintony', Corbel, sans-serif;
+ 	color: #358d36;
+ 	text-align: center;
+ 	margin-top:15px;
+}
+
+#pag-encomendas h4{
+	font: 1.2rem 'Roboto', sans-serif;
+	color: #696969;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#data-hora-num
+{
+	display: flex;
+}
+
+.container1 
+{
+	max-width: 650px;
+	margin: 60px auto;
+	background: #cfcfcf;
+	padding: 20px;
+    border-radius: 20px;
+    margin-right: 15rem;
+}
+  
+form input, form label, form select 
+{
+	font: 1.3rem 'Sintony', Corbel, sans-serif;
+	width: 96%;
+	margin-bottom: 1px;
+	padding: 0 10px;
+    height: 50px;
+    text-align: justify;
+}
+  
+form textarea
+{
+	height: 80px;
+	width: 100%;
+	margin-bottom: 10px;
+	padding-left: 8px;
+    box-sizing: border-box;
+}
+  
+form input[type="radio"], form input[type="checkbox"]
+{
+	width: 15px;
+	height: 15px;
+    margin-left: 50px;
+}
+  
+form fieldset
+{  
+	margin-bottom: 10px;
+	padding: 10px;
+    font: 1.3rem Roboto, Lato, Avenir, sans-serif;
+}
+  
+#botoes-form
+{
+  display: flex;
+}
+  
+#submit 
+{
+	color: #FFF;
+	background-color: #358d36;
+	font-size: 18px;
+	font-weight: 700;
+	height: 50px;
+	margin-top: 30px;
+	margin-right: 15px;
+	border: 0;
+    border-radius: 5px;
+    text-align: center;
+}
+  
+#reset 
+{
+	background-color: #dd0c0c;
+	color:#FFF;
+	font-size: 18px;
+	font-weight: 700;
+	height: 50px;
+	margin-top: 30px;
+	border: 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.paragrafo-resultado, .bad 
+{
+	background: rgb(109, 255, 182);
+	font: 1.2rem Sintony, Corbel, sans-serif;
+	padding: 15px 20px;
+	height: 40px;
+	display: flex;
+ 	justify-content: center;
+	border-radius: 6px;
+	margin-top: 15px;
+}
+  
+.bad 
+{
+	background: rgb(255, 150, 150);
+	font: 1.2rem Sintony, Corbel, sans-serif;
+	padding: 15px 20px;
+	height: 40px;
+	display: flex;
+    justify-content: center;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+footer
+{
+	background-color:#358d36;
+	padding:1rem;
+}
+
+footer
+{
+  grid-area: footer;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  padding-top: 20px;
+  margin-left: 180px;
+  padding-left: 20px;
+}
+
+footer p{
+	font: 1rem 'Roboto';
+	text-align: center;
+	color:#FFF;
+}
+
+footer p{
+	color:#FFF;
+}
+
+
+footer a:link{
+	text-decoration: none;
+	font: 1.06rem 'Roboto';
+	color: #FFF;
+}
+
+footer a:visited{
+	color: #FFF;
+}
+
+footer a:hover{
+	color:#000;
+}
+
+footer a:active{
+	color:#000;
+}
+
+
